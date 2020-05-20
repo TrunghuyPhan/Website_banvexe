@@ -1,0 +1,32 @@
+.body-content {
+    padding-top: 30px;
+}
+.list-step  li{
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 5px ;
+    border: 1px solid #db5c00;
+}
+.content-step {
+    padding-top: 20px;
+}
+table, tr, td, th{
+    border-collapse: collapse;
+    border: 1px solid black;
+    height: 30px;
+}
+table {
+    text-align: center;
+    width: 75%;
+}
+th {
+    background-color: cornflowerblue;
+}
+.route {
+    width: 30%;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

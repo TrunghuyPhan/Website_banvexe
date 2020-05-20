@@ -1,191 +1,192 @@
 .header-top {
+    background-color: #db5c00;
     width: 100%;
     height: 30px;
-    background-color: #db5c00;
+}
+.sitelogo {
     float: left;
 }
-.sitelogo  a img {
-    width: 30%;
-}
-.header-inner {
-    position: relative;
+.sitelogo img {
+    width: 65%;
+    margin-top: 5px;
 }
 .main-menu {
-    /* top: 10px; */
-    position: relative;
+    float: right;
+    padding-top: 20px;
 }
-.main-menu > ul > li {
+.menu > li {
     display: inline-block;
-    padding: 20px; 
-    font-size: 16px;
-    font-weight: 550;
-    top: 50px;
 }
-
-.main-menu > ul > li:hover {
-    text-decoration: underline;
-}
-ul > li > a {
+.menu > li > a{
     color: #db5c00;
+    display: block;
+    padding: 15px;
+    font-weight: 600;
+}
+.menu > li > a:hover {
+    border-bottom: 1px solid #db5c00;
+}
+i {
+    margin-right: 5px ;
+} 
+.banner {
+    padding: 20px 0;
+}
+.banner-left {
+    width: 40%;
+    float: left;
     padding: 15px 0;
 }
-
-li > i {
-    margin-right: 10px;
-    color: #db5c00;
+.book-ticket {
+    border: 1px solid #db5c00;
+    align-items: center;
+    justify-content: center;
 }
-div.body-top {
-    width: 100%;
-}
-div.col-5 {
-    height: 250px;
-    border: 1px solid black;
-    margin-top: 20px;
-}
-div.book-ticket {
-    text-align: center;
-    height: 30px;
-    padding-top: 5px;
-    background-color: #db5c00;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-}
-div.book-ticket > i {
-    margin-right: 10px;
-
-}
-div.row-1 {
-    width: 100%;
-    padding: 30px 10px;
-}
-div.row-2 {
-    padding: 30px 10px;
-}
-div.rule {
-    margin-left: 15px;
-}
-div.rule > button {
-    width: 180px;
+.title {
     height: 25px;
-    background-color: #db5c00;
+    text-align: center;
+    background-color: #db5c00;    
 }
-div.rule button >a {
+.title > h4 {
     color: white;
-    font-size: 18px;
-    font-weight: 500;
-}
-div.row-3 {
-    padding: 30px 10px;
-}
-div.find-ticket button{
-    width: 200px;
-    height: 28px;
-    background-color: #db5c00;
+    padding-top: 3px;
 }
 
-div.find-ticket button a {
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
+.place {
+    display: flex;
+    padding: 20px 8px;
 }
-div.tutorial-buy-ticket {
-    margin-left: 15px;
+.go-add {
+    padding-right: 10px;
 }
-div.tutorial-buy-ticket button {
-    width: 180px;
-    height: 28px;
+.date {
+    display: flex;
+    padding: 30px 8px;
+}
+.date input#ngaydi {
+    height: 25px;
+}
+.rule {
+    margin: 0 auto;
+}
+.rule > button {
+    width: 100px;
     background-color: #db5c00;
+    border-style: none;
+    height: 25px;
+    outline: none;
+    align-items: center;
+    justify-content: center;
 }
-div.tutorial-buy-ticket button a {
+.rule > button>a {
     color: white;
-    font-size: 18px;
-    font-weight: 500;
+    display: block;
 }
-div.col-7 img {
-    height: 300px;
+.find-ticket {
+    display: flex;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.find-ticket  button {
+    background-color: #db5c00;
+    width: 145px;
+    border-style: none;
+    height: 25px;
+    outline: none;
+    margin-right: 20px;
+}
+.find-ticket button a {
+    color: white;
+    display: block;
+}
+.banner-right {
+    width: 59%;
+    margin-left: 1%;
+    float: left;
+}
+.banner-right img {
     width: 100%;
 }
-
-div.info-owner {
-    position: relative;
-    top: 20px;
+.info {
+    padding: 20px 0;
 }
-div.note {
-    text-overflow: unset;
+.note {
+    float: left;
+    width: 49%;
+    margin-right: 1%;
     font-size: 20px;
     color: #db5c00;
-    padding-bottom: 30px;
+    text-align: justify;
 }
-
-div.phone h3 {
+.phone {
+    text-align: center;
+    padding-top: 10px;
+    float: left;
+    width: 24%;
+    margin-right: 1%;
+}
+.phone h3 {
     font-size: 25px;
     text-align: center;
     color: green;
     padding-bottom: 10px;
 }
-div.phone {
-    text-align: center;
-    padding-top: 10px;
-}
-div.phone span a{
+.phone span a{
     color: #db5c00;
     font-size: 30px;
     font-weight: bold;
     text-align: center;
 }
-div.coach img{
+.coach {
+    width: 25%;
+    float: left;
+}
+.coach img{
     width: 100%;
-    height: 80px;
+    height: 120px;
+    
 }
-div.banner {
-    text-align: center;
-    padding-top: 15px;
-    margin: 0 1%;
-}
-div.banner img {
+.bg-download img {
+    margin: 0 auto;
     width: 100%;
+    padding: 20px 0;
 }
-div.footer {
-    position: relative;
-    top: 20px;
+.footer {
     background-color: #db5c00;
-    width: 100%;
-    height: 150px;
 }
-div.contact {
-    padding-top: 10px;
-    font-size: 18px;
+.footer-item {
+    padding: 20px 0;
+    display: flex;
 }
-div.contact p {
+.contact {
+    width: 49%;
+    margin-right: 1%;
     color: white;
-    line-height: 30px;
 }
-div.contact p >i {
-    margin-right: 5px;
-}
-div.contact span a{
+.contact span a {
     color: white;
-    line-height: 25px;
 }
-div.contact span > i {
-    color: white;
-    margin-right: 5px;
-}
-div.confirm {
-    padding-top: 40px;
-}
-div.confirm img {
-    width: 95%;
-}
-
-div.social {
-    padding-top: 30px;
-    color: white;
-    font-size: 20px;
+.confirm {
+    width: 24%;
+    margin-right: 1%;
     text-align: center;
 }
-div.social i {
+.confirm > img {
+    width: 100% ;
+}
+.social {
+    width: 25%;
     color: white;
-    padding: 10px;
+    text-align: center;
+}
+.social i {
+    padding: 5px;
+    font-size: 20px;
+}
+.fa-facebook-square {
+    color: #4267b2;
+}
+.fa-youtube-square {
+    color: #ff0000;
 }
