@@ -4,12 +4,11 @@
 .list-step  li{
     display: inline-block;
     padding: 15px 20px;
-    border-radius: 5px ;
+    border-radius: 15px 15px 0 0 ;
     border: 1px solid #db5c00;
+    margin-right: -5px;
 }
-.content-step {
-    padding-top: 20px;
-}
+
 table, tr, td, th{
     border-collapse: collapse;
     border: 1px solid black;
@@ -27,6 +26,47 @@ th {
 }
 .footer {
     position: absolute;
-    bottom: 0;
+    top: 90%;
     width: 100%;
+}
+.tab {
+    display: none;
+}
+form#buyform {
+    width: 75%;
+}
+
+button#nextBtn,button#prevBtn {
+    color: white ;
+    background-color: #db5c00;
+    width: 70px;
+    height: 30px;
+    border: unset;
+    border-radius: 5px;
+    outline: none;
+}
+.group button {
+    background-color: #db5c00;
+    border: unset;
+    border-radius: 5px;
+    width: 60px;
+    height: 20px;
+    outline: none;
+}
+.group button a {
+    color: white;
+}
+
+.ticket {
+   float: left;
+}
+.info-ticket span {
+    display: block;
+}
+.choose-area td:active {
+    background-color: #db5c00;
+    transition: .5s;
+}
+.choose-area {
+    display: inline-block;
 }

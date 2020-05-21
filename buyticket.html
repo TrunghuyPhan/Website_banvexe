@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="Assets/buy.css">
     <title>Website Bán vé xe</title>
 </head>
+
 <body>
     <div class="header">
         <div class="header-top">
@@ -45,76 +47,274 @@
     </div>
     <div class="content-step">
         <div class="container">
-            <table>
-                <tr>
-                    <th class="route">Chọn tuyến</th>
-                    <th class="time">Giờ xuất phát</th>
-                    <th class="price">Gía vé</th>
-                    <th class="empty">Còn trống</th>
-                    <th class="buy">Đặt mua</th>
-                  </tr>
-                  <tr>
-                    <td>
-                        <form action="#" method="POST">
-                            <input type="checkbox" name="route-1" value="1">
-                            <label for="route-1">Quảng Ngãi - TP.HCM</label>
-                        </form>
-                    </td>
-                    <td>
-                        6:00
-                    </td>
-                    <td>
-                        350.000 đ
-                    </td>
-                    <td>16</td>
-                    <td><button><a href="#">Đặt mua</a></button></td>
-                  </tr>
-                  <tr>
-                    <td>
-                        <form action="#" method="POST">
-                            <input type="checkbox" name="route-2" value="1">
-                            <label for="route-2">Quảng Ngãi - TP.HCM</label>
-                        </form>
-                    </td>
-                    <td>
-                        12:00
-                    </td>
-                    <td>
-                        350.000 đ
-                    </td>
-                    <td>10</td>
-                    <td>
-                        <button>
-                            <a href="#">Đặt mua</a>
+            <form id="buyform" action="">
+                <div class="tab">
+                    <div class="group">
+                        <table>
+                            <tr>
+                                <th class="route">Chọn tuyến</th>
+                                <th class="time">Giờ xuất phát</th>
+                                <th class="price">Gía vé</th>
+                                <th class="empty">Còn trống</th>
+                                <th class="buy">Đặt mua</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="#" method="POST">
+                                        <input type="radio" name="route-1" value="1">
+                                        <label for="route-1">Quảng Ngãi - TP.HCM</label>
+                                    </form>
+                                </td>
+                                <td>
+                                    6:00
+                                </td>
+                                <td>
+                                    350.000 đ
+                                </td>
+                                <td>16</td>
+                                <td><button><a href="#">Đặt mua</a></button></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="#" method="POST">
+                                        <input type="radio" name="route-2" value="1">
+                                        <label for="route-2">Quảng Ngãi - TP.HCM</label>
+                                    </form>
+                                </td>
+                                <td>
+                                    12:00
+                                </td>
+                                <td>
+                                    350.000 đ
+                                </td>
+                                <td>10</td>
+                                <td>
+                                    <button>
+                                        <a href="#">Đặt mua</a>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="#" method="POST">
+                                        <input type="radio" name="route-3" value="1">
+                                        <label for="route-3">Quảng Ngãi - TP.HCM</label>
+                                    </form>
+                                </td>
+                                <td>
+                                    18:00
+                                </td>
+                                <td>
+                                    350.000 đ
+                                </td>
+                                <td>9</td>
+                                <td><button><a href="#">Đặt mua</a></button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab ">
+                    <div class="ticket">
+                        <div class="info-ticket">
+                            <h4>Thông tin vé</h4>
+                            <span>Vị trí đang chọn</span>
+                            <span>Gía vé: 350.000 VND</span>
+                            <span>Gía thức ăn: 0 VND</span>
+                            <span>Tổng cộng: 350.000 VND</span>
+                        </div>
+                        <div class="info-cus">
+                            <h4>Thông tin khách hàng</h4>
+                            <label for="name">Họ tên: </label>
+                            <input type="text" id="name" name="name"><br>
+                            <label for="phone">Số điện thoại: </label>
+                            <input type="text" id="phone" name="phone"><br>
+                            <label for="mail">Email: </label>
+                            <input type="text" id="mail" name="mail">
+                        </div>
+                    </div>
+                    <div class="choose-area">
+                        <table >
+                            <tr>
+                                <th>Chọn vị trí</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td onclick="myfunction()"><span>A1</span></td>
+                                <td><span>A2</span></td>
+                                <td><span>B1</span></td>
+                                <td><span>B2</span></td>
+                                <td><span>C1</span></td>
+                                <td><span>C2</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>A3</span></td>
+                                <td><span>A4</span></td>
+                                <td><span>B3</span></td>
+                                <td><span>B4</span></td>
+                                <td><span>C3</span></td>
+                                <td><span>C4</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>A5</span></td>
+                                <td><span>A6</span></td>
+                                <td><span>B5</span></td>
+                                <td><span>B6</span></td>
+                                <td><span>C5</span></td>
+                                <td><span>C6</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>A7</span></td>
+                                <td><span>A8</span></td>
+                                <td><span>B7</span></td>
+                                <td><span>B8</span></td>
+                                <td><span>C7</span></td>
+                                <td><span>C8</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>A9</span></td>
+                                <td><span>A10</span></td>
+                                <td><span>B9</span></td>
+                                <td><span>B10</span></td>
+                                <td><span>C9</span></td>
+                                <td><span>C10</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>A11</span></td>
+                                <td><span>A12</span></td>
+                                <td><span></span></td>
+                                <td><span></span></td>
+                                <td><span>C11</span></td>
+                                <td><span>C12</span></td>
+                            </tr>
+                            <tr>
+                                <td><span>A13</span></td>
+                                <td><span>A14</span></td>
+                                <td><span>B11</span></td>
+                                <td><span>B12</span></td>
+                                <td><span>C13</span></td>
+                                <td><span>C14</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab">
+                    <div class="food-sta1">
+                        <table>
+                            <tr>
+                                <th>Trạm dừng Đồng Nai</th>
+                            </tr>
+                            <tr>
+                                <td>Cơm <span class="price">35.000đ</span></td>
+                                <td><span>Cơm 1</span></td>
+                                <td><span>Cơm 2</span></td>
+                                <td><span>Cơm 3</span></td>
+                                <td><span>Cơm 4</span></td>
+                                <td><span>Cơm 5</span></td>
+                            </tr>
+                            <tr>
+                                <td>Bún <span class="price">40.000đ</span></td>
+                                <td><span>Bún 1</span></td>
+                                <td><span>Bún 2</span></td>
+                                <td><span>Bún 3</span></td>
+                                <td><span>Bún 4</span></td>
+                                <td><span>Bún 5</span></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <th>Trạm dừng Bình Định</th>
+                            </tr>
+                            <tr>
+                                <td>Cơm <span class="price">35.000đ</span></td>
+                                <td><span>Cơm 1</span></td>
+                                <td><span>Cơm 2</span></td>
+                                <td><span>Cơm 3</span></td>
+                                <td><span>Cơm 4</span></td>
+                                <td><span>Cơm 5</span></td>
+                            </tr>
+                            <tr>
+                                <td>Bún <span class="price">40.000đ</span></td>
+                                <td><span>Bún 1</span></td>
+                                <td><span>Bún 2</span></td>
+                                <td><span>Bún 3</span></td>
+                                <td><span>Bún 4</span></td>
+                                <td><span>Bún 5</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab">
+                    <div class="confirm-info">
+                        <table>
+                            <tr>
+                                <th>Thông tin vé</th>
+                            </tr>
+                            <tr>
+                                <td>Tuyến: </td>
+                            </tr>
+                            <tr>
+                                <td>Ngày khởi hành: </td>
+                            </tr>
+                            <tr>
+                                <td>Giường</td>
+                            </tr>
+                            <tr>
+                                <td>Họ tên: </td>
+                            </tr>
+                            <tr>
+                                <td>Số điện thoại: </td>
+                            </tr>
+                            <tr>
+                                <td>Tổng tiền: </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="payment">
+                        <table>
+                            <tr>
+                                <th>Hình thức thanh toán</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" value="wallet">Ví điện tử<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" value="bank">Ngân hàng nội địa<br>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div style="overflow:auto;">
+                    <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)"><i class="fa fa-times"></i>
+                            Hủy</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Tiếp tục<i class="fa fa-arrow-right"></i>
                         </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                        <form action="#" method="POST">
-                            <input type="checkbox" name="route-3" value="1">
-                            <label for="route-3">Quảng Ngãi - TP.HCM</label>
-                        </form>
-                    </td>
-                    <td>
-                        18:00
-                    </td>
-                    <td>
-                        350.000 đ
-                    </td>
-                    <td>9</td>
-                    <td><button><a href="#">Đặt mua</a></button></td>
-                  </tr>
-            </table>
+                    </div>
+                </div>
+                <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+            </form>
         </div>
     </div>
-    <div class="footer">
+    <!-- <div style="clear: both;" class="footer">
         <div class="container">
             <div class="footer-item">
                 <div class="contact">
-                    <p><i class="fa fa-building" ></i>
+                    <p><i class="fa fa-building"></i>
                         Công ty TNHH XXXXX (MST: 4355515115)</p>
-                    <p><i class="fa fa-map-marker"></i>     Địa chỉ: 1234 Đinh Bộ Lĩnh, P25, Quận Bình Thạnh, TP.HCM</p>
+                    <p><i class="fa fa-map-marker"></i> Địa chỉ: 1234 Đinh Bộ Lĩnh, P25, Quận Bình Thạnh, TP.HCM</p>
                     <span><i class="fa fa-envelope"></i><a
                             href="mailto: thanhthaiqngai3011@gmail.com">thanhthaiqngai3011@gmail.com</a></span>
                     <br>
@@ -132,6 +332,84 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
+
 </html>
+<script>
+    var currentTab = 0; // Current tab is set to be the first tab (0)
+    showTab(currentTab); // Display the current tab
+    
+    function showTab(n) {
+      // This function will display the specified tab of the form...
+      var x = document.getElementsByClassName("tab");
+      x[n].style.display = "block";
+      //... and fix the Previous/Next buttons:
+      if (n == 0) {
+        document.getElementById("prevBtn").style.display = "none";
+      } else {
+        document.getElementById("prevBtn").style.display = "inline";
+      }
+      if (n == (x.length - 1)) {
+        document.getElementById("nextBtn").innerHTML = "Thanh toán";
+      } else {
+        document.getElementById("nextBtn").innerHTML = 'Tiếp tục' + ' ' + '<i class="fa fa-arrow-right"></i>';
+      }
+      //... and run a function that will display the correct step indicator:
+      fixStepIndicator(n)
+    }
+    
+    function nextPrev(n) {
+      // This function will figure out which tab to display
+      var x = document.getElementsByClassName("tab");
+      // Exit the function if any field in the current tab is invalid:
+      if (n == 1 && !validateForm()) return false;
+      // Hide the current tab:
+      x[currentTab].style.display = "none";
+      // Increase or decrease the current tab by 1:
+      currentTab = currentTab + n;
+      // if you have reached the end of the form...
+      if (currentTab >= x.length) {
+        // ... the form gets submitted:
+        document.getElementById("buyform").submit();
+        return false;
+      }
+      // Otherwise, display the correct tab:
+      showTab(currentTab);
+    }
+    
+    function validateForm() {
+      // This function deals with validation of the form fields
+      var x, y, i, valid = true;
+      x = document.getElementsByClassName("tab");
+      y = x[currentTab].getElementsByTagName("input");
+      // A loop that checks every input field in the current tab:
+      for (i = 0; i < y.length; i++) {
+        // If a field is empty...
+        if (y[i].value == "") {
+          // add an "invalid" class to the field:
+          y[i].className += " invalid";
+          // and set the current valid status to false
+          valid = false;
+        }
+      }
+      // If the valid status is true, mark the step as finished and valid:
+      if (valid) {
+        document.getElementsByClassName("step")[currentTab].className += " finish";
+      }
+      return valid; // return the valid status
+    }
+    
+    function fixStepIndicator(n) {
+      // This function removes the "active" class of all steps...
+      var i, x = document.getElementsByClassName("step");
+      for (i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(" active", "");
+      }
+      //... and adds the "active" class on the current step:
+      x[n].className += " active";
+    }
+    function myfunction() {
+        document.getElementsByTagName("span").style.color = "#db5c00"
+    }
+    </script>
