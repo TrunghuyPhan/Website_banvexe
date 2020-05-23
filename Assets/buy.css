@@ -3,7 +3,7 @@
 }
 .list-step  li{
     display: inline-block;
-    padding: 15px 20px;
+    padding: 10px 15px;
     border-radius: 15px 15px 0 0 ;
     border: 1px solid #db5c00;
     margin-right: -5px;
@@ -24,15 +24,17 @@ th {
 .route {
     width: 30%;
 }
-.footer {
-    top: 90%;
+/* .footer {
+    position: absolute;
+    top: 100%;
     width: 100%;
-}
+} */
 .tab {
     display: none;
 }
 form#buyform {
-    width: 80%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 button#nextBtn,button#prevBtn {
@@ -43,6 +45,9 @@ button#nextBtn,button#prevBtn {
     border: unset;
     border-radius: 5px;
     outline: none;
+}
+.group {
+    padding-bottom: 20px;
 }
 .group button {
     background-color: #db5c00;
@@ -58,14 +63,18 @@ button#nextBtn,button#prevBtn {
 
 .ticket {
    float: left;
-   padding-top: 5%;
+   margin-top: 3%;
+   border: 1px solid #db5c00;
+   border-radius: 5px;
+   padding: 8px;
+   margin-right: 2%;
 }
 .info-ticket span {
     display: block;
 }
 .choose-area td:active {
-    background-color: #db5c00;
-    transition: .05s;
+    background-color: aqua;
+    transition: .25s;
 }
 
 .info-ticket {
@@ -102,7 +111,7 @@ button#nextBtn,button#prevBtn {
 .choose-area {
     display: inline-block;
     width: 50%;
-    padding-top: 5%;
+    padding-top: 3%;
 }
 .choose-area h4 {
     width: 75%;
@@ -113,6 +122,26 @@ button#nextBtn,button#prevBtn {
 }
 .choose-area  tr  td {
     padding: 10px 0px;
+}
+.status {
+    padding-top: 15px;
+    
+}
+.status ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.status ul li span {
+    padding: 0 8px;
+    margin-right: 10px;
+    border: 1px solid #db5c00;
+    border-radius: 50%;
+}
+span.red {
+    background-color: red;
+}
+span.blue {
+    background-color: aqua;
 }
 .food-sta1 {
     width: 100%;
