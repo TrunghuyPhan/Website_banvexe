@@ -1,0 +1,149 @@
+.header{
+    background-color:black;
+    color: white;
+    width: 100%;
+    float: left;
+}
+h2{
+    padding-left: 50px;
+}
+.main-menu > ul> li >a{
+    color:deepskyblue;
+    display: block;
+    padding: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 20px;
+}
+.main-menu ul{
+    list-style-type: none;
+    padding: 0;
+    
+}
+.main-menu{
+    float: left;
+    width:12%;
+    height:100%;
+    background-color:whitesmoke;
+    border-right:2px solid black;
+    
+}
+.renderbody{
+    float: left;
+    width: 87.85%;
+    height: 100%;
+    background-color:white;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-left: 50px;
+    text-align: center;
+}
+th{
+    height: 70px;
+    padding: 15px;
+    background-color:	#00CED1;
+    color: white;
+}
+td{
+   height: 50px;
+   padding: 5px;
+    vertical-align: bottom;
+}
+#search{
+    
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 29px 50px;
+    height: 50px;
+    font-size: 15px;
+    width: 20%;
+    padding: 10px;
+    background-color:white;
+    color:black;
+}
+.btn{
+    
+    border-radius: 10px;
+    height: 50px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+.book-ticket {
+
+    align-items: center;
+    justify-content: center;
+    margin-left:50px;
+    margin-top: 50px;
+    width: 500px;
+    height: 200px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.place {
+    display: flex;
+    padding: 20px 8px;
+}
+.go-add {
+    padding-right: 10px;
+    color:black;
+    
+    
+}
+/* .date {
+    display: flex;
+    padding: 30px 8px;
+} */
+.date input#ngaydi {
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.find-ticket {
+    display: flex;
+    padding-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.find-ticket  button {
+    border-radius: 10px;
+    background-color:black;
+    width: 145px;
+    border-style: none;
+    height: 25px;
+    
+}
+/* .find-ticket button a {
+    color:black;
+    display: block;
+} */
+.arr-add{
+    color: black;
+}
+.date{
+    color: black;
+}
+.tab{
+    margin: 50px;
+}
+#adress{
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+button#nextBtn, button#prevBtn {
+    color: white;
+    background-color:black;
+    width: 70px;
+    height: 30px;
+    border: unset;
+    border-radius: 5px;
+    outline: none;
+}
