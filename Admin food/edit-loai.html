@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/edit-food.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top">
+        <h2>Food</h2>
+      </div>
+      <div class="sidebar">
+
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="list-food.html"
+              ><i class="fas fa-list-ul"></i>Danh sách thức ăn</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-basket"></i>Loại thức ăn</a>
+          </li>
+          <li>
+            <a href="list-hoadon.html"
+              ><i class="fas fa-file-invoice-dollar"></i>Danh sách hóa đơn</a
+            >
+          </li>
+          <li>
+            <a href="user-admin.html"><i class="fas fa-address-book"></i>Người dùng</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-cog"></i>Cài đặt</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main_content">
+        <form
+          action="product_edit.php?id=31"
+          method="POST"
+          enctype="multipart/form-data"
+          class="form"
+        >
+          <div class="form-group">
+            <label>ID</label>
+            <br>
+            <input
+              type="text"
+              class="form-control"
+              name="txtName"
+              value="01"
+            />
+          </div>
+          <div class="form-group">
+            <label>Tên loại</label>
+            <br>
+            <input
+              type="text"
+              class="form-control"
+              name="txtName"
+              value="Cơm"
+            />
+          </div>
+          <div class="form-group">
+            <label>Mô tả</label>
+            <br>
+            <input
+              type="text"
+              class="form-control"
+              name="txtPrice"
+              value="Cơm quê hương"
+            />
+          </div>
+          <button type="submit" class="btn" name="btn-Edit">
+            Thay đổi
+          </button>
+          <button type="reset" class="btn" name="btn-reset">
+            Reset
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.main-content {
+    margin: 10px;
+}
+
+.table {
+    width: 80%;
+    margin: 50px;
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.table .thead tr th {
+    border: 1px solid #000;
+}
+
