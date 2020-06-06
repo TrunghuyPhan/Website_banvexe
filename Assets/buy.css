@@ -193,6 +193,9 @@ span.blue {
 }
 .payment h4 {
     text-align: center;
+    background-color: #db5c00;
+    padding: 5px;
+    color: white;
 }
 .payment tr td {
     padding-left: 10px;

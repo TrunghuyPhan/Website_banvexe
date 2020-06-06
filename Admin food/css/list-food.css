@@ -1,0 +1,87 @@
+/* @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+* {
+  font-family: sans-serif; /* Change your font family */
+
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 90%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #30a5ff;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+  border-left-style: solid;
+  border: 1px solid #fff;
+  text-align: left;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+}
+
+
+.content-table tbody tr td a {
+  display: table;
+  float: left;
+  text-align: center;
+  color: #000;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+h2.header-content {
+  margin: 40px 50px 20px;
+  margin-right: 122px;
+  /* border-block-end: inherit; */
+  border-bottom: 1px solid;
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+}
+
+.table-wrapper {
+  width: 86%;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
+  float: left;
+  margin: 20px 0px 20px 50px;
+}
+.table-title {
+  padding-bottom: 10px;
+  margin: 0 0 10px;
+}
+.table-title h2 {
+  margin: 6px 0 0;
+  font-size: 22px;
+}
+.table-title .btn {
+  float: right;
+  height: 30px;
+  font-weight: bold;
+  font-size: 12px;
+  text-shadow: none;
+  min-width: 100px;
+  border-radius: 50px;
+  line-height: 13px;
+}
+.table-title .btn i {
+  margin-right: 4px;
+}
+.table-wrapper .table-title .row .col4{
+  display: block;
+  margin-top: 0px;
+}

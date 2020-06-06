@@ -1,0 +1,150 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: #f3f5f9;
+}
+
+
+.wrapper .top {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  background-color: #000;
+  float: left;
+}
+
+.wrapper .top h2 {
+  color: white;
+  font-size: 30px;
+  padding: 15px 16px;
+  padding-left: 52px;
+}
+
+
+.wrapper .sidebar {
+  width: 20%;
+  height: 100%;
+  background: #fff;
+  padding: 0px;
+  float: left;
+  /* position: fixed; */
+  /* margin-top: 50px; */
+}
+
+.wrapper .sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.wrapper .sidebar ul li a {
+  color: #30a5ff;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas {
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+  background-color: #594f8d;
+}
+.main_content {
+  position: relative;
+  top: 30px;
+}
+.wrapper .sidebar ul li:hover a {
+  color: #fff;
+}
+
+
+.wrapper .main_content {
+  position: relative;
+  width: 79%;
+  margin-left: 1%;
+  float: left;
+}
+
+.wrapper .main_content .main .header-content {
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+.wrapper .main_content .main a {
+  float: left;
+}
+
+.table {
+    margin-left: 50px;
+}
+
+.table-wrapper {
+  width: 86%;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
+  float: left;
+  margin: 20px 0px 20px 50px;
+}
+.table-title {
+  padding-bottom: 10px;
+  margin: 0 0 10px;
+}
+.table-title h2 {
+  margin: 6px 0 0;
+  font-size: 22px;
+}
+.table-wrapper .table-title .row .col4 a{
+  float: right;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+.table-title .row .col4 a{
+  color: 30A5FF;
+}
+.col4 a i{
+  padding-right: 5px;
+}
+
+.wrapper .tablehome {
+  display: block;
+  float: left;
+}
+
+/* form search */
+.search form {
+  margin-left: 50px;
+}
+form .input {
+  font-size: 22px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+form .btn {
+  font-size: 22px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Home content */
+.wrapper .main_content .col3 {
+  padding: 26px 55px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}

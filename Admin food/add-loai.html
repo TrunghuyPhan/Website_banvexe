@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/edit-food.css" />
+  <link rel="stylesheet" href="../Assets/style.css">
+  <link rel="stylesheet" href="../Assets/setup.css">
+  <title>Quản lý trạm dừng chân</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <div class="header-top">
+        <div class="container"></div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="sitelogo">
+            <a href="#"><img src="../IMG/logo.png" alt=""></a>
+          </div>
+          <div class="main-menu">
+            <ul class="menu">
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Lịch trình</a></li>
+              <li><a href="#">Kiểm tra vé</a></li>
+              <li><a href="#">Đăng nhập</a></li>
+              <li><a href="#">Liên hệ</a></li>
+              <li><a href="#"><i class="fa fa-shopping-cart"></i>Giỏ vé</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div style="clear: both; top: 30px; position: relative;" class="sidebar">
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="list-food.html"><i class="fas fa-list-ul"></i>Danh sách thức ăn</a>
+          </li>
+          <li>
+            <a href="list-loai.html"><i class="fas fa-shopping-basket"></i>Loại thức ăn</a>
+          </li>
+          <li>
+            <a href="list-hoadon.html"><i class="fas fa-file-invoice-dollar"></i>Danh sách hóa đơn</a>
+          </li>
+          <li>
+            <a href="user-admin.html"><i class="fas fa-address-book"></i>Người dùng</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-cog"></i>Cài đặt</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main_content">
+        <form action="product_edit.php?id=31" method="POST" enctype="multipart/form-data" class="form">
+          <div class="form-group">
+            <label>ID</label>
+            <br>
+            <input type="text" class="form-control" name="txtName" value="01" />
+          </div>
+          <div class="form-group">
+            <label>Tên loại</label>
+            <br>
+            <input type="text" class="form-control" name="txtName" value="Cơm" />
+          </div>
+          <div class="form-group">
+            <label>Mô tả</label>
+            <br>
+            <input type="text" class="form-control" name="txtPrice" value="Cơm quê hương" />
+          </div>
+          <button type="submit" class="btn" name="btn-Edit">
+            Thêm mới
+          </button>
+          <button type="reset" class="btn" name="btn-reset">
+            Reset
+          </button>
+        </form>
+      </div>
+    </div>
+    <div style="clear: both; position: relative;;" class="footer">
+      <div class="container">
+        <div class="footer-item">
+          <div class="contact">
+            <p><i class="fa fa-building"></i>
+              Công ty TNHH XXXXX (MST: 4355515115)</p>
+            <p><i class="fa fa-map-marker"></i> Địa chỉ: 1234 Đinh Bộ Lĩnh, P25, Quận Bình Thạnh, TP.HCM</p>
+            <span><i class="fa fa-envelope"></i><a
+                href="mailto: thanhthaiqngai3011@gmail.com">thanhthaiqngai3011@gmail.com</a></span>
+            <br>
+            <span><i class="fa fa-globe"></i><a href="google.com.vn">busticketwithfood.com.vn</a></span>
+            <br>
+            <span><i class="fa fa-phone"></i></i><a href="tel:0364129272">0364 12 92 72</a></span>
+          </div>
+          <div class="confirm">
+            <img src="../IMG/dathongbao.png" alt="">
+          </div>
+          <div class="social">
+            <p>Chúng tôi trên mạng xã hội </p>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

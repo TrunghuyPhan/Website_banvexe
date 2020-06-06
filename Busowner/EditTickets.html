@@ -1,68 +1,121 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Assets/manager.css">
     <link rel="stylesheet" href="../Assets/Home.css">
+    <link rel="stylesheet" href="../Assets/style.css">
+    <link rel="stylesheet" href="../Assets/setup.css">
     <title>Chỉnh sửa vé</title>
 </head>
+
 <body>
     <div class="header">
-      <h2>Ticket Saler </h2>          
-    </div>  
-       <div class="main-menu">
+        <div class="header-top">
+            <div class="container">
+
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="sitelogo">
+                    <a href="Home.html"><img src="../IMG/logo.png" alt=""></a>
+                </div>
+                <div class="main-menu">
+                    <ul class="menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        </li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Lịch trình</a></li>
+                        <li><a href="#">Kiểm tra vé</a></li>
+                        <li><a href="#">Đăng nhập</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart"></i>Giỏ vé</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="group-menu">
             <ul>
                 <li><a href="../Busowner/Home.html" target="_self">Trang chủ</a></li>
                 <li><a href="../Busowner/BookTickets.html" target="_self">Đặt vé</a></li>
                 <li><a href="../Busowner/EditTickets.html" target="_self">Chỉnh sửa vé</a></li>
                 <li><a href="../Busowner/Listtickets.html" target="_self">Quản lý vé</a></li>
-            </ul> 
+            </ul>
         </div>
         <div class="renderbody">
-            <div class="container"> 
-                <div style="margin-left: 50px;">
+            <h3 style="color: #00CED1; padding-bottom: 20px;">Chỉnh sửa vé</h3>
+            <div style="margin-left: 50px;">
                 <label for="Search">Tên khách hàng</label>: <input type="search" id="search" />
                 <label for="Search">SĐT</label>: <input type="search" id="search" size="10" />
-                <button class="btn">Tìm kiếm</button>  
-                </div> 
-                <table border="1" class="table">
-                    <tr>
-                        <th>ID Vé</th>
-                        <th>Tên khách hàng</th>
-                        <th>SĐT</th>
-                        <th>Gmail</th>
-                        <th>Chuyến đi</th>
-                        <th>Ngày khởi hành</th>
-                        <th>Giờ khởi hành</th>
-                        <th>Số ghế</th>
-                        <th>ID thức ăn</th>
-                        <th>Thanh toán</th>
-                        <th>Hình thức thanh toán</th>
-                        <th>Thời gian thanh toán</th>
-                        <th>Ngày thanh toán</th>
+                <button class="btn">Tìm kiếm</button>
+            </div>
+            <table style="border-collapse: collapse;" class="table">
+                <tr style="border-collapse: collapse;">
+                    <th>ID Vé</th>
+                    <th>Tên khách hàng</th>
+                    <th>SĐT</th>
+                    <th>Gmail</th>
+                    <th>Chuyến đi</th>
+                    <th>Ngày khởi hành</th>
+                    <th>Giờ khởi hành</th>
+                    <th>Số ghế</th>
+                    <th>ID thức ăn</th>
+                    <th>Thanh toán</th>
+                    <th>Hình thức thanh toán</th>
+                    <th>Thời gian thanh toán</th>
+                    <th>Ngày thanh toán</th>
 
-                    </tr>
-                    <tr>
-                        <td>1711060111</td>
-                        <td>Võ Trần Anh Vũ</td>
-                        <td>0357xxx123</td>
-                        <td>AnhVu0108@abc.com</td>
-                        <td>Quảng Ngãi-HCM</td>
-                        <td>11-05-2020</td>
-                        <td>16:00</td>
-                        <td>A01</td>
-                        <td>C01;C02</td>
-                        <td>500.000</td>
-                        <td>Thẻ ngân hàng nội địa</td>
-                        <td>11:00 </td>
-                        <td>10-05-2020 </td>
-                    </tr>
-                </table> 
-                <button class="btn" style="margin:30px 50px;">Xóa vé</button> 
-                <button class="btn" style="margin:30px 0px;">Chỉnh sửa</button> 
-                
+                </tr>
+                <tr>
+                    <td>1711060111</td>
+                    <td>Võ Trần Anh Vũ</td>
+                    <td>0357xxx123</td>
+                    <td>AnhVu0108@abc.com</td>
+                    <td>Quảng Ngãi-HCM</td>
+                    <td>11-05-2020</td>
+                    <td>16:00</td>
+                    <td>A01</td>
+                    <td>C01;C02</td>
+                    <td>500.000</td>
+                    <td>Thẻ ngân hàng nội địa</td>
+                    <td>11:00 </td>
+                    <td>10-05-2020 </td>
+                </tr>
+            </table>
+            <button class="btn" style="margin:30px 50px;">Xóa vé</button>
+            <button class="btn" style="margin:30px 0px;">Chỉnh sửa</button>
+        </div>
+    </div>
+    <div style="clear: both;" class="footer">
+        <div class="container">
+            <div class="footer-item">
+                <div class="contact">
+                    <p><i class="fa fa-building"></i>
+                        Công ty TNHH XXXXX (MST: 4355515115)</p>
+                    <p><i class="fa fa-map-marker"></i> Địa chỉ: 1234 Đinh Bộ Lĩnh, P25, Quận Bình Thạnh, TP.HCM</p>
+                    <span><i class="fa fa-envelope"></i><a
+                            href="mailto: thanhthaiqngai3011@gmail.com">thanhthaiqngai3011@gmail.com</a></span>
+                    <br>
+                    <span><i class="fa fa-globe"></i><a href="google.com.vn">busticketwithfood.com.vn</a></span>
+                    <br>
+                    <span><i class="fa fa-phone"></i></i><a href="tel:0364129272">0364 12 92 72</a></span>
+                </div>
+                <div class="confirm">
+                    <img src="../IMG/dathongbao.png" alt="">
+                </div>
+                <div class="social">
+                    <p>Chúng tôi trên mạng xã hội </p>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a>
+                </div>
             </div>
         </div>
-    
+    </div>
 </body>
+
 </html>

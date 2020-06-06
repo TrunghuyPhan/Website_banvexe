@@ -14,7 +14,9 @@
 <body>
     <div class="header">
         <div class="header-top">
-            <div class="container"></div>
+            <div class="container">
+
+            </div>
         </div>
         <div class="header-bottom">
             <div class="container">
@@ -23,7 +25,7 @@
                 </div>
                 <div class="main-menu">
                     <ul class="menu">
-                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Trang chủ</a></li>                        </li>
                         <li><a href="#">Giới thiệu</a></li>
                         <li><a href="#">Lịch trình</a></li>
                         <li><a href="#">Kiểm tra vé</a></li>
@@ -72,7 +74,7 @@
                                     350.000 đ
                                 </td>
                                 <td>16</td>
-                                <td><button><a href="#">Đặt mua</a></button></td>
+                                <td><button type="button" onclick="nextPrev(1)"><a href="#">Đặt mua</a></button></td>
                             </tr>
                             <tr>
                                 <td>
@@ -89,7 +91,7 @@
                                 </td>
                                 <td>10</td>
                                 <td>
-                                    <button>
+                                    <button type="button" onclick="nextPrev(1)">
                                         <a href="#">Đặt mua</a>
                                     </button>
                                 </td>
@@ -108,7 +110,7 @@
                                     350.000 đ
                                 </td>
                                 <td>9</td>
-                                <td><button><a href="#">Đặt mua</a></button></td>
+                                <td><button type="button" onclick="nextPrev(1)"><a href="#">Đặt mua</a></button></td>
                             </tr>
                         </table>
                     </div>
@@ -136,7 +138,7 @@
                         <table>
                             <h4>Chọn vị trí</h4>
                             <tr>
-                                <td><span>A1</span></td>
+                                <td id="location" onclick="myFunction()"><span>A1</span></td>
                                 <td><span>A2</span></td>
                                 <td><span>B1</span></td>
                                 <td><span>B2</span></td>
@@ -411,7 +413,9 @@
         // Otherwise, display the correct tab:
         showTab(currentTab);
     }
-
+    function myFunction() {
+        document.getElementById("location").style="background-color: red"
+    }
     function validateForm() {
         // This function deals with validation of the form fields
         var x, y, i, valid = true;
@@ -443,7 +447,5 @@
         //... and adds the "active" class on the current step:
         x[n].className += " active";
     }
-    function myfunction() {
-        document.getElementsByTagName("span").style.color = "#db5c00"
-    }
+    
 </script>

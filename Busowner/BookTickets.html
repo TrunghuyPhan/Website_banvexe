@@ -1,28 +1,58 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Assets/manager.css">
     <link rel="stylesheet" href="../Assets/Home.css">
     <link rel="stylesheet" href="../Assets/buycopy.css">
+    <link rel="stylesheet" href="../Assets/setup.css">
+    <link rel="stylesheet" href="../Assets/style.css">
+    <link rel="stylesheet" href="../Assets/buy.css">
     <title>Home</title>
 </head>
+
 <body>
     <div class="header">
-      <h2>Ticket Saler </h2>          
-    </div>  
-       <div class="main-menu">
+        <div class="header-top">
+            <div class="container">
+
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="sitelogo">
+                    <a href="Home.html"><img src="../IMG/logo.png" alt=""></a>
+                </div>
+                <div class="main-menu">
+                    <ul class="menu">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Lịch trình</a></li>
+                        <li><a href="#">Kiểm tra vé</a></li>
+                        <li><a href="#">Đăng nhập</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="#"><i class="fa fa-shopping-cart"></i>Giỏ vé</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="group-menu">
             <ul>
                 <li><a href="../Busowner/Home.html" target="_self">Trang chủ</a></li>
                 <li><a href="../Busowner/BookTickets.html" target="_self">Đặt vé</a></li>
                 <li><a href="../Busowner/EditTickets.html" target="_self">Chỉnh sửa vé</a></li>
                 <li><a href="../Busowner/Listtickets.html" target="_self">Quản lý vé</a></li>
-            </ul> 
+            </ul>
         </div>
         <div class="renderbody">
+            <h3 style="color: #00CED1; padding-bottom: 20px;">Đặt vé</h3>
             <form id="buyform" action="">
                 <div class="tab">
-                    <div class="book-ticket" >
+                    <div class="book-ticket">
                         <div class="place">
                             <div class="go-add">
                                 <label for="go-adr">Địa điểm đi: </label>
@@ -46,11 +76,11 @@
                             </form>
                         </div>
                         <!-- <div class="find-ticket">
-                            <button><a href="booktickets.html">Tìm vé xe</a></button>
-                        </div> -->
+                                <button><a href="booktickets.html">Tìm vé xe</a></button>
+                            </div> -->
                     </div>
                 </div>
-                
+
                 <div class="tab">
                     <div class="group">
                         <table>
@@ -116,7 +146,7 @@
                         </table>
                     </div>
                 </div>
-                <!-- <div class="tab ">
+                <div class="tab ">
                     <div class="ticket">
                         <div class="info-ticket">
                             <h4>Thông tin vé</h4>
@@ -307,16 +337,17 @@
                                     <input type="radio" value="wallet">Tiền mặt<br>
                                 </td>
                             </tr>
-                            
+
                         </table>
                     </div>
-                </div> -->
+                </div>
                 <div style="overflow:auto;">
                     <div style="float:right;">
-                        <button type="button" id="prevBtn" onclick="nextPrev(-1)" style="background-color: black;"><i class="fa fa-times" ></i>
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)" style="background-color: black;"><i
+                                class="fa fa-times"></i>
                             Quay lại</button>
-                        <button type="button" id="nextBtn" onclick="nextPrev(1)" style="background-color: black;">Tiếp tục<i
-                                class="fa fa-arrow-right"></i>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)" style="background-color: black;">Tiếp
+                            tục<i class="fa fa-arrow-right"></i>
                         </button>
                     </div>
                 </div>
@@ -327,9 +358,36 @@
                     <span class="step"></span>
                 </div>
             </form>
-            
-        </div>       
+
+        </div>
+    </div>
+    <div style="clear: both;" class="footer">
+        <div class="container">
+            <div class="footer-item">
+                <div class="contact">
+                    <p><i class="fa fa-building"></i>
+                        Công ty TNHH XXXXX (MST: 4355515115)</p>
+                    <p><i class="fa fa-map-marker"></i> Địa chỉ: 1234 Đinh Bộ Lĩnh, P25, Quận Bình Thạnh, TP.HCM</p>
+                    <span><i class="fa fa-envelope"></i><a
+                            href="mailto: thanhthaiqngai3011@gmail.com">thanhthaiqngai3011@gmail.com</a></span>
+                    <br>
+                    <span><i class="fa fa-globe"></i><a href="google.com.vn">busticketwithfood.com.vn</a></span>
+                    <br>
+                    <span><i class="fa fa-phone"></i></i><a href="tel:0364129272">0364 12 92 72</a></span>
+                </div>
+                <div class="confirm">
+                    <img src="../IMG/dathongbao.png" alt="">
+                </div>
+                <div class="social">
+                    <p>Chúng tôi trên mạng xã hội </p>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
 <script>
     var currentTab = 0; // Current tab is set to be the first tab (0)
